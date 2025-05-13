@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notes App</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="shortcut icon" href="./images/notes.png" type="image/png"/>
+</head>
+<body>
+  <div class="app">
+    <div class="sidebar">
+      <h2><img src="./images/notes.png" alt="icon"/> Notes</h2>
+      <button id="create-btn"><img src="images/edit.png"> New Note</button>
+    </div>
+
+    <div class="main-content">
+      <div class="editor-toolbar">
+        <button class="format-btn" onclick="format('bold')"><b>B</b></button>
+        <button class="format-btn" onclick="format('italic')"><i>I</i></button>
+        <button class="format-btn" onclick="format('underline')"><u>U</u></button>
+        <button class="format-btn" onclick="format('insertUnorderedList')">• List</button>
+      </div>
+      <div class="notes-container" id="notes-container"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
